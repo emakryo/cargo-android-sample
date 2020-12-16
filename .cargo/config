@@ -1,0 +1,12 @@
+[alias]
+# Useful aliases to reduce your types.
+build-android = "build --target aarch64-linux-android"
+run-android = "run --target aarch64-linux-android"
+test-android = "test --target aarch64-linux-android"
+bench-android = "bench --target aarch64-linux-android"
+
+[target.aarch64-linux-android]
+# You can configure linker here or by setting the environment variable CARGO_TARGET_AARCH64_LINUX_ANDROID_LINKER.
+# The following line is a typical path for NDK bundled in Android Studio on Mac.
+# linker = "/Users/You/Library/Android/sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang"
+runner = "./adb-runner.sh"
