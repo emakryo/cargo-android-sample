@@ -7,3 +7,6 @@ adb shell mkdir -p $ROOT_DIR
 adb push $1 $ROOT_DIR
 
 adb shell CRITERION_HOME=$ROOT_DIR/criterion $ROOT_DIR/$(basename $1) ${@:2:$#}
+
+rm -r target/criterion_android
+adb pull $ROOT_DIR/criterion target/criterion_android
