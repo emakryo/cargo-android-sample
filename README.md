@@ -1,4 +1,4 @@
-# Sample app for android with rust/cargo
+# Cargo configuration example for android
 
 ## Setup
 
@@ -23,10 +23,11 @@ $ cargo run-android
 $ cargo test-android
 ```
 
-## Benchmark
+## Benchmark w/ Criterion.rs
 
 ```
 $ cargo bench-android
+$ open ./target/criterion_android
 ```
 
 ## More
