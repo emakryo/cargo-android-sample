@@ -3,7 +3,7 @@ set -e
 
 # Transfer binary to device
 ROOT_DIR=/data/local/tmp/cargo-android-sample
-adb shell mkdir -p $ROOT_DIR
+adb shell mkdir -p $ROOT_DIR $ROOT_DIR/criterion
 adb push $1 $ROOT_DIR
 
 # Execute
