@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    cargo_android_sample::main()
 }

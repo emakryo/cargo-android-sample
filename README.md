@@ -25,4 +25,10 @@ $ cargo test-android
 
 ## Benchmark
 
-TBD
+```
+$ cargo bench-android
+```
+
+## More
+
+https://github.com/rust-windowing/android-ndk-rs
